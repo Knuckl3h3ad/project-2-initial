@@ -1,6 +1,6 @@
 package com.csc205.project2;
 
-public class Cube implements ThreeDimensionalShape {
+public class Cube extends Shape{
 
     private double width;
 
@@ -31,7 +31,7 @@ public class Cube implements ThreeDimensionalShape {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Cube{");
+        final StringBuilder sb = new StringBuilder("Cube {");
         sb.append("width=")
                 .append(width);
         sb.append(", ");
