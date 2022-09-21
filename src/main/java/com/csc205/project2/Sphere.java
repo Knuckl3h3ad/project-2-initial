@@ -4,6 +4,7 @@ package com.csc205.project2;
 public class Sphere extends Shape{
 
     private double radius;
+    private double dfskjdf;
 
     public Sphere() {
         super();

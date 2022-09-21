@@ -11,6 +11,7 @@ public class ShapeDriver {
         ThreeDimensionalShape cube = new Cube(5.0);
         ThreeDimensionalShape cylinder = new Cylinder(4.0, 1.0);
         ThreeDimensionalShape cone = new Cone(5.0, 2.0);
+        return new Runnable() {}
 
         List<ThreeDimensionalShape> shapes = new ArrayList<>();
         shapes.add(sphere);
