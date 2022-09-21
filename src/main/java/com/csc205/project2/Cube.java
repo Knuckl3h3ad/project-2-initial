@@ -22,7 +22,7 @@ public class Cube extends Shape{
 }
 
     public double surfaceArea() {
-        return 6 * (width * width);
+        return 6.0 * (width * width);
     }
 
     public double volume() {
@@ -32,14 +32,9 @@ public class Cube extends Shape{
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Cube {");
-        sb.append("width=")
-                .append(width);
-        sb.append(", ");
-        sb.append("surface area=")
-                        .append(surfaceArea());
-        sb.append(", ");
-        sb.append("volume=")
-                .append(volume());
+        sb.append("width=").append(width);
+        sb.append(", surface area=").append(surfaceArea());
+        sb.append(", volume=").append(volume());
         sb.append('}');
         return sb.toString();
     }

@@ -12,6 +12,7 @@ public class Cylinder extends Shape{
     }
 
     public Cylinder(double height, double radius) {
+        super();
         this.radius = radius;
         this.height = height;
     }
@@ -27,7 +28,7 @@ public class Cylinder extends Shape{
     }
 
     public double surfaceArea() {
-        return ((2 * Math.PI * radius * height) + (2 * Math.PI * (radius * radius)));
+        return ((2.0 * Math.PI * radius * height) + (2.0 * Math.PI * (radius * radius)));
     }
     public double volume() {
         return Math.PI * radius * radius * height;
@@ -36,17 +37,10 @@ public class Cylinder extends Shape{
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Cylinder {");
-        sb.append("height=")
-                .append(height);
-        sb.append(", ");
-        sb.append("radius=")
-                .append(radius);
-        sb.append(", ");
-        sb.append("surface area=")
-                .append(surfaceArea());
-        sb.append(", ");
-        sb.append("volume=")
-                .append(volume());
+        sb.append("height=").append(height);
+        sb.append(", radius=").append(radius);
+        sb.append(", surface area=").append(surfaceArea());
+        sb.append(", volume=").append(volume());
         sb.append('}');
         return sb.toString();
     }

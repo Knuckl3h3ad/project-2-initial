@@ -12,8 +12,9 @@ public class Cone extends Shape{
     }
 
     public Cone(double height, double radius) {
-        this.height = height;
+        super();
         this.radius = radius;
+        this.height = height;
     }
 
     public double getHeight() {return height;}
@@ -30,20 +31,16 @@ public class Cone extends Shape{
         return ((Math.PI * radius)*(radius + (Math.sqrt((height * height)+(radius * radius)))));
     }
     public double volume() {
-        return Math.PI * radius * radius * (height / 3);
+        return Math.PI * radius * radius * (height / 3.0);
     }
 
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Cone {");
-        sb.append("height=")
-                .append(height);
-        sb.append(", radius=")
-                .append(radius);
-        sb.append(", surface area=")
-                .append(surfaceArea());
-        sb.append(", volume=")
-                .append(volume());
+        sb.append("height=").append(height);
+        sb.append(", radius=").append(radius);
+        sb.append(", surface area=").append(surfaceArea());
+        sb.append(", volume=").append(volume());
         sb.append('}');
         return sb.toString();
     }
